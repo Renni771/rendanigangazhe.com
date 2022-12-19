@@ -7,57 +7,92 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1.4;
 }
 
 footer {
-  margin-top: 2.5em;
-}
-
-.hand:hover {
-  border: 1 solid blue;
-}
-
-h1 > span:hover {
-  border: 1 solid blue;
+  margin-top: 2.5rem;
 }
 
 .icon {
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
-a {
+.icon > a {
   text-decoration: none;
 }
 
-a:visited {
-  color: black;
+p > a:hover {
+  color: red;
+}
+
+svg {
+  height: 2rem;
+  width: 2rem;
 }
 
 svg:hover {
   color: red;
 }
 
-svg {
-  height: 2em;
-  width: 2em;
-  color: black;
-}
-
 ul {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  a:visited {
+    color: #fff;
+  }
+
+  svg {
+    color: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  a {
+    color: black;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  svg {
+    color: black;
+  }
+}
+
+
+
+
+
+
+
