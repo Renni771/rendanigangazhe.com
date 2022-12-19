@@ -1,0 +1,63 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 15vw;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 2.5em;
+}
+
+.hand:hover {
+  border: 1 solid blue;
+}
+
+h1 > span:hover {
+  border: 1 solid blue;
+}
+
+.icon {
+  margin-right: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+svg:hover {
+  color: red;
+}
+
+svg {
+  height: 2em;
+  width: 2em;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between
+}
