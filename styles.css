@@ -12,6 +12,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin-top: 4rem;
 }
 
 p {
@@ -19,8 +20,9 @@ p {
   line-height: 1.4;
 }
 
-footer {
-  margin-top: 2.5rem;
+footer > div{
+  display: flex;
+  gap: 1rem;
 }
 
 .icon {
@@ -42,15 +44,6 @@ svg {
 
 svg:hover {
   color: red;
-}
-
-ul {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 @media (prefers-color-scheme: dark) {
