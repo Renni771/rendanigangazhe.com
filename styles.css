@@ -2,10 +2,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  margin: 15vw;
-}
-
 h1 {
   font-size: 3rem;
 }
@@ -13,6 +9,10 @@ h1 {
 h2 {
   font-size: 2rem;
   margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {

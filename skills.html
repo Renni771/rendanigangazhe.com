@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,23 +18,44 @@
   <body>
     <header>
       <h1>
-        <span class="hand"> &#128075; </span> Hey, I'm Rendani.
+        <span> &#129299; </span> My skills
       </h1>
     </header>
 
     <main>
       <article>
-        <p>
-          I'm a full stack web/mobile app developer and Computer Science student based in Freiburg, Germany.
-          Orignally from South Africa, I moved here to study and experience a new culture and learn a new language.
-          I like keeping a wide range of interests besides coding and enjoy training and playing guitar &#127928;
-        </p>
+        <section>
+          <p>I have most experience using <strong>Javascript</strong> and <strong>Typescript</strong> for both backend and frontend development. When developing mobile apps I am comfortable using <strong>Dart</strong> with the <strong>Flutter</strong> UI kit. </p>
+        </section>
 
-        <p>The name "Rendani" is a <a href="https://en.wikipedia.org/wiki/Venda_people" target="_blank">Tshivenda</a> unisex name meaning "praise/give praise".</p>
+        <section>
+          <h3>Frontend</h3>
+          <p>
+            Regarding mobile app develoment with Flutter, I have professional experience various state management libraries including <strong>Provider</strong> and <strong>Riverpod</strong>.
+            On the web development side of things, I have experience building user interfaces with pure <strong>HTML/CSS3</strong> (like the page you're looking at now) and larger more interactive web apps using <strong>Svelte</strong>+<strong>Sveltekit</strong>.
+          </p>
+        </section>
+
+
+        <section>
+          <h3>Backend</h3>
+          <p>
+            On the backend, I have confident professional experience with <strong>Node.js</strong> and building out JSON APIs with <strong>express.js</strong>
+            and have most experience with <strong>Firebase</strong> as a database.
+          </p>
+        </section>
+
+        <section>
+          <h3>DevOps</h3>
+          <p>I have experience with <strong>Docker</strong> and have built <strong>CI-CD</strong> pipelines to test, build and deploy services to <strong>Kubernetes</strong> clusters.</p>
+        </section>
+
+        <section>
+          <h3>Other languages</h3>
+          <p>I have knowledge of but no professional experience with <strong>Python</strong> and <strong>Go</strong>.</p>
+        </section>
       </article>
     </main>
-
-    <p>Feel free to read up about some of <a href="skills.html">my skills</a>.</p>
 
 
     <footer>
@@ -77,8 +99,27 @@
   </body>
 
   <style>
+    p, h3 {
+      padding: 0;
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 2rem;
+    }
+
+    p {
+      margin-top: 12px;
+    }
+
     body {
-      margin: 30vh 15vw 0 15vw;
+      margin: 10vh 15vw 0 15vw;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        strong {
+          color: gray;
+        }
     }
   </style>
 </html>
