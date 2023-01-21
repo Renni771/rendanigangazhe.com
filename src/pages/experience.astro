@@ -1,0 +1,49 @@
+---
+import Links from "../components/Links.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Professional Experience - Rendani Gangazhe - Software Engineer">
+  <div class="rounded-md p-8 m-auto max-w-screen-xl lg:shadow-lg">
+    <article class="flex flex-col gap-4">
+      <h1>
+        <a
+          class="mr-8 transition-colors duration-300 ease-out hover:text-sky-500"
+          href="/">&larr;</a
+        >
+        <span> &#129299;</span> Professional <span class="text-gradient"
+          >Experience</span
+        >
+      </h1>
+
+      <section class="my-8 rounded-xl p-4 shadow">
+        <h2 class="m-0">
+          <span class="text-gradient">Mäuschen App</span>
+        </h2>
+
+        <p class="text-gray-500">
+          From 2020 to 2022 -
+
+          <a
+            class="text-sky-500 underline"
+            href="https://mäuschen.app/"
+            target="_blank"
+          >
+            Website
+          </a>
+        </p>
+
+        <p>
+          Responsible for building cross-platform mobile apps using <strong
+            >Flutter</strong
+          >. Built out JSON APIs using <strong>Express.js</strong>,
+          containerised them with <strong>Docker/Docker-componse</strong> and deployed
+          them in <strong>Kubernetes</strong> clusters.
+        </p>
+      </section>
+
+      <h2 class="m-0">Links</h2>
+      <Links />
+    </article>
+  </div>
+</Layout>

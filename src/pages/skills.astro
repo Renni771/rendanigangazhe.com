@@ -1,0 +1,116 @@
+---
+import Links from "../components/Links.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="My Skills - Rendani Gangazhe - Software Engineer">
+  <div class="rounded-md p-8 m-auto max-w-screen-xl lg:shadow-lg">
+    <article class="flex flex-col gap-4">
+      <h1>
+        <a
+          class="mr-8 transition-colors duration-300 ease-out hover:text-sky-500"
+          href="/"
+          >&larr;
+        </a>
+
+        <span> 😎</span> My <span class="text-gradient">Skills</span>
+      </h1>
+
+      <section>
+        <p class="text-lg">
+          I'm most experienced using <strong>JavaScript</strong> and <strong
+            >TypeScript</strong
+          > for both front and backend development and am very comfortable using
+          <strong>Dart</strong> along with the <strong>Flutter</strong> UI kit for
+          cross-platform mobile app development.
+        </p>
+      </section>
+
+      <div class="flex flex-col md:flex-row gap-4">
+        <section class="rounded-xl p-4 shadow">
+          <h3>
+            <span class="text-gradient"> Frontend</span>
+          </h3>
+
+          <p class="text-lg">
+            Regarding Flutter app development, I have professional experience
+            with various state management libraries including <strong
+              >Provider</strong
+            >
+            and
+            <strong>Riverpod</strong>. On the web development side of things, I
+            have experience building user interfaces with pure <strong
+              >HTML5/CSS3</strong
+            > - like the page you're looking at now - and larger more interactive
+            web apps using <strong>Svelte</strong> and <strong>Sveltekit</strong
+            >.
+          </p>
+        </section>
+
+        <section class="rounded-xl p-4 shadow">
+          <h3>
+            <span class="text-gradient">Backend</span>
+          </h3>
+
+          <p class="text-lg">
+            On the backend, I have confident professional experience with <strong
+              >Node.js</strong
+            > and have built out many JSON APIs with <strong>express.js</strong
+            >. My prefered database is <strong>Firebase</strong> but I also have
+            experience using <strong>MinIO</strong>, <strong>MySQL</strong> and other
+            similar relational databases following the SQL standard.
+          </p>
+        </section>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-4">
+        <section class="rounded-xl p-4 shadow">
+          <h3>
+            <span class="text-gradient">Other languages and tools</span>
+          </h3>
+
+          <p class="text-lg">
+            I have knowledge of but no professional experience with <strong
+              >Python</strong
+            > and <strong>Go</strong>. I'm also comfortable using various
+            developer tools such as <strong>Git</strong>, <strong>Gitea</strong
+            >, <strong>Github</strong> and
+            <strong>Jira</strong> in professional settings.
+          </p>
+        </section>
+
+        <section class="rounded-xl p-4 shadow">
+          <h3>
+            <span class="text-gradient">DevOps</span>
+          </h3>
+
+          <p class="text-lg">
+            I have experience with <strong>Docker</strong> and have built <strong
+            >
+              CI-CD</strong
+            > pipelines to test, build and deploy services to <strong
+              >Kubernetes</strong
+            > clusters.
+          </p>
+        </section>
+      </div>
+
+      <h2>Links</h2>
+      <Links />
+    </article>
+  </div>
+</Layout>
+
+<style>
+  section {
+    flex: 1;
+  }
+
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+</style>
