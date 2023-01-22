@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Professional Experience - Rendani Gangazhe - Software Engineer">
   <div class="rounded-md p-8 m-auto max-w-screen-xl lg:shadow-lg">
-    <article class="flex flex-col gap-4">
+    <header>
       <h1>
         <a
           class="mr-8 transition-colors duration-300 ease-out hover:text-sky-500"
@@ -15,35 +15,40 @@ import Layout from "../layouts/Layout.astro";
           >Experience</span
         >
       </h1>
+    </header>
 
-      <section class="my-8 rounded-xl p-4 shadow">
-        <h2 class="m-0">
-          <span class="text-gradient">Mäuschen App</span>
-        </h2>
+    <main>
+      <article class="flex flex-col gap-4">
+        <section class="my-8 rounded-xl p-4 shadow">
+          <h2 class="m-0">
+            <span class="text-gradient">Mäuschen App</span>
+          </h2>
 
-        <p class="text-gray-500">
-          From 2020 to 2022 -
+          <p class="text-gray-500">
+            From 2020 to 2022 -
 
-          <a
-            class="text-sky-500 underline"
-            href="https://mäuschen.app/"
-            target="_blank"
-          >
-            Website
-          </a>
-        </p>
+            <a
+              class="text-sky-500 underline"
+              href="https://mäuschen.app/"
+              target="_blank"
+            >
+              Website
+            </a>
+          </p>
 
-        <p>
-          Responsible for building cross-platform mobile apps using <strong
-            >Flutter</strong
-          >. Built out JSON APIs using <strong>Express.js</strong>,
-          containerised them with <strong>Docker/Docker-componse</strong> and deployed
-          them in <strong>Kubernetes</strong> clusters.
-        </p>
-      </section>
+          <p>
+            Responsible for building cross-platform mobile apps using <strong
+              >Flutter</strong
+            >. Built out JSON APIs using <strong>Express.js</strong>,
+            containerised them with <strong>Docker/Docker-componse</strong> and deployed
+            them in <strong>Kubernetes</strong> clusters.
+          </p>
+        </section>
+      </article>
+    </main>
 
-      <h2 class="m-0">Links</h2>
+    <footer>
       <Links />
-    </article>
+    </footer>
   </div>
 </Layout>
