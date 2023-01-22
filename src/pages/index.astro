@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Links from "../components/Links.astro";
 import WavingHand from "../components/WavingHand.astro";
 import Card from "../components/Card.astro";
+
+const websiteRepo = "https://github.com/Renni771/rendanigangazhe.com";
 ---
 
 <Layout title="Rendani Gangazhe - Software Engineer">
@@ -44,8 +46,15 @@ import Card from "../components/Card.astro";
       </div>
     </main>
 
-    <footer>
+    <footer class="flex justify-between items-end">
       <Links />
+      <p class="text-gray-500 font-light text-xs">
+        You can view the source code for this website <a
+          class="text-sky-500 underline"
+          target="_blank"
+          href={websiteRepo}>here</a
+        >
+      </p>
     </footer>
   </div>
 </Layout>
