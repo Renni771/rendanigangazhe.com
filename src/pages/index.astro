@@ -1,65 +1,70 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Links from "../components/Links.astro";
-import WavingHand from "../components/WavingHand.astro";
 import Card from "../components/Card.astro";
-
-const websiteRepo = "https://github.com/Renni771/rendanigangazhe.com";
 ---
 
 <Layout title="Rendani Gangazhe - Software Engineer">
-  <div
-    class="rounded bg-white p-8 m-auto max-w-screen-xl md:max-w-3xl md:shadow-lg md:border md:border-gray-200"
-  >
-    <header>
-      <h1>
-        <WavingHand />
-        Hey, I'm <span class="text-gradient">Rendani</span>
-      </h1>
-    </header>
+  <h1 class="text-3xl md:text-5xl">
+    <span class="hand"> &#128075;</span> Hey, I'm Rendani.
+  </h1>
 
-    <main>
-      <p class="mt-4 text-lg">
-        I'm a full stack web/mobile app developer and Computer Science student
-        based in Freiburg, Germany. Orignally from South Africa, I moved here to
-        study and experience a new culture and learn a new language. I like
-        keeping a wide range of interests besides coding and enjoy training and
-        playing guitar &#127928; The name "Rendani" is a <a
-          class="text-black font-bold underline"
-          href="https://en.wikipedia.org/wiki/Venda_people"
-          target="_blank"
-        >
-          <strong>Tshivenda</strong>
-        </a> unisex name meaning "praise/give praise".
-      </p>
+  <div class="mt-8">
+    <p class="text-2xl md:text-3xl font-bold tracking-wide">
+      Full stack web/mobile app software engineer. Computer science student.
+      Music-head. Guitarist.
+    </p>
 
-      <div class="flex flex-col lg:flex-row gap-4 my-8">
-        <Card
-          href="skills"
-          title="My Skills"
-          body="Read up on my skills and what I have to offer"
-        />
+    <p class="text-lg mt-4">
+      Using every piece of knowledge I gather along the way I aim to build
+      quality and maintainable web, cloud-based and mobile software.
+    </p>
 
-        <Card
-          href="experience"
-          title="Professional Experience"
-          body="A brief outline of my professional experience"
-        />
-      </div>
-    </main>
+    <div class="flex flex-col lg:flex-row gap-4 my-8">
+      <Card
+        href="/about/#skills"
+        title="My Skills"
+        body="Read up on my skills and what I have to offer"
+      />
 
-    <footer class="flex justify-between flex-col md:flex-row gap-4">
-      <Links />
-      <p class="text-gray-900 font-light text-xs sm:self-end">
-        You can
-        <a
-          class="text-black underline font-bold"
-          target="_blank"
-          href={websiteRepo}
-        >
-          view the source code
-        </a> for this website on Github
-      </p>
-    </footer>
+      <Card
+        href="/about/#experience"
+        title="Professional Experience"
+        body="A brief outline of my professional experience"
+      />
+    </div>
   </div>
 </Layout>
+
+<style>
+  span.hand {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(-10deg);
+    }
+    20% {
+      transform: rotate(12deg);
+    }
+    30% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(9deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+</style>

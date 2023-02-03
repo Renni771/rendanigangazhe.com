@@ -1,0 +1,36 @@
+---
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+
+const websiteRepo = "https://github.com/Renni771/rendanigangazhe.com";
+---
+
+<Layout title="Rendani Gangazhe - Software Engineer">
+  <h1>Link Tree</h1>
+  <p class="text-lg">
+    Here's a little link tree where you can find more information on what I'm up
+    to.
+  </p>
+
+  <div class="flex flex-col gap-4 my-8 w-full">
+    <Card
+      href=""
+      title="Github"
+      body="Check out my open-source work on Github."
+    />
+
+    <Card href="" title="LinkedIn" body="Link with me professinally." />
+
+    <Card href="" title="Twitter" body="I tweet!" />
+
+    <Card href="" title="Stackoverflow" body="Mandatory?" />
+  </div>
+
+  <p class="text-lg">
+    You can also <a href={websiteRepo}>
+      <strong class="text-gray-100"
+        >view the source code for this website on Github</strong
+      >
+    </a>.
+  </p>
+</Layout>

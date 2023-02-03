@@ -1,0 +1,116 @@
+---
+import ExperienceCard from "../components/ExperienceCard.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Rendani Gangazhe - Software Engineer">
+  <h1>About me</h1>
+
+  <p class="text-lg mt-8">
+    I'm Rendani Gangazhe, a full stack web/mobile app developer and Computer
+    Science student based in Freiburg, Germany. Orignally from South Africa, I
+    moved here to study and experience a new culture and learn a new language. I
+    like keeping a wide range of interests besides coding and enjoy training and
+    playing guitar &#127928; The name "Rendani" is a
+    <a
+      class="font-bold underline"
+      href="https://en.wikipedia.org/wiki/Venda_people"
+      target="_blank"
+    >
+      <strong>Tshivenda</strong>
+    </a> unisex name meaning "praise/give praise".
+  </p>
+
+  <hr class="my-16" />
+
+  <article id="experience">
+    <h2>Professional Experience</h2>
+
+    <ExperienceCard
+      title="Mäuschen App"
+      href="https://mäuschen.app/"
+      from="2020"
+      to="2022"
+      body="Responsible for building cross-platform mobile apps using Flutter Built out JSON APIs using Express.js, containerised them with Docker/Docker-componse and deployed them in Kubernetes clusters. "
+    />
+  </article>
+
+  <hr class="my-16" />
+
+  <article class="flex flex-col gap-4" id="skills">
+    <h2>Technical Skills</h2>
+    <section>
+      <p class="text-lg">
+        I'm most experienced using <strong>JavaScript</strong> and <strong
+          >TypeScript</strong
+        > for both front and backend development and am very comfortable using
+        <strong>Dart</strong> along with the <strong>Flutter</strong> UI kit for
+        cross-platform mobile app development.
+      </p>
+    </section>
+
+    <div class="flex flex-col md:flex-row gap-4 mt-4">
+      <section class="p-4 bg-zinc-800">
+        <h3 class="text-xl">Frontend</h3>
+
+        <p class="text-lg mt-4">
+          Regarding Flutter app development, I have professional experience with
+          various state management libraries including <strong>Provider</strong>
+          and
+          <strong>Riverpod</strong>. On the web development side of things, I
+          have experience building user interfaces with pure <strong
+            >HTML5/CSS3</strong
+          > and larger more interactive web apps using <strong>Svelte</strong>
+          and <strong>Sveltekit</strong>.
+        </p>
+      </section>
+
+      <section class="p-4 bg-zinc-800">
+        <h3 class="text-xl">Backend</h3>
+
+        <p class="text-lg mt-4">
+          On the backend, I have confident professional experience with <strong
+            >Node.js</strong
+          > and have built out many JSON APIs with <strong>Express.js</strong>.
+          My preferred database is <strong>Firebase</strong> but I also have experience
+          using <strong>MinIO</strong>, <strong>MySQL</strong> and other similar
+          relational databases following the SQL standard.
+        </p>
+      </section>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-4">
+      <section class="p-4 bg-zinc-800">
+        <h3 class="text-xl">Other languages and tools</h3>
+
+        <p class="text-lg mt-4">
+          I have knowledge of but no professional experience with <strong
+            >Python</strong
+          > and <strong>Go</strong>. I'm also comfortable using various
+          developer tools such as <strong>Git</strong>, <strong>Gitea</strong>, <strong
+            >Github</strong
+          > and
+          <strong>Jira</strong> in professional settings.
+        </p>
+      </section>
+
+      <section class="p-4 bg-zinc-800">
+        <h3 class="text-xl">DevOps</h3>
+
+        <p class="text-lg mt-4">
+          I have experience with <strong>Docker</strong> and have built <strong>
+            CI-CD</strong
+          > pipelines to test, build and deploy services to <strong
+            >Kubernetes</strong
+          > clusters.
+        </p>
+      </section>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  section {
+    flex: 1;
+  }
+</style>
