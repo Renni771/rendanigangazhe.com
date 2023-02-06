@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+
+const avatarSrc = '../../public/images/avatar.png'
 ---
 
 <Layout title="Rendani Gangazhe - Software Engineer">
@@ -11,7 +13,7 @@ import Card from "../components/Card.astro";
   <div class="flex flex-col items-center justify-center md:flex-row md:my-12">
     <img
       class="rounded-full w-32 h-32 shadow-md my-8 md:mr-8 md:my-0"
-      src="/public/images/avatar.png"
+      src={avatarSrc}
       alt="My portrait"
     />
 
