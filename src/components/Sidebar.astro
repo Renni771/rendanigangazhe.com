@@ -19,8 +19,8 @@ const isCurrentPage = (url: string) => {
 const shouldShowSocials = Astro.url.pathname !== "/links";
 ---
 
-<aside class="sticky top-0 flex md:flex-col bg-[var(--night)] z-50">
-  <div>
+<aside class="sticky top-0 flex md:flex-col bg-[var(--night)] z-50 pt-10">
+  <div class="sticky top-0 pt-4 md:pt-0">
     <nav class="flex md:flex-col md:justify-evenly gap-2">
       {
         navbarUrls.map(({ href, text }) => (
