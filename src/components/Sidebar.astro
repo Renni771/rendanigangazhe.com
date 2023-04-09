@@ -15,18 +15,20 @@ const isCurrentPage = (url: string) => {
 
   return pathname === (url.startsWith("/") ? url : "/" + url);
 };
+
+const shouldShowSocials = Astro.url.pathname !== "/links";
 ---
 
 <aside class="sticky top-0 flex md:flex-col bg-[var(--night)] z-50">
-  <div class="sticky top-0 pt-4 md:pt-0">
+  <div>
     <nav class="flex md:flex-col md:justify-evenly gap-2">
       {
         navbarUrls.map(({ href, text }) => (
           <a
-            class={`text-xl whitespace-nowrap transition-colors text-neutral-600 hover:text-neutral-50 p-2 text-right ${
+            class={`text-xl whitespace-nowrap transition-colors hover:text-neutral-50 p-2 text-right ${
               isCurrentPage(href)
                 ? "text-neutral-50 border-b-zinc-300 border-b-2"
-                : ""
+                : "text-neutral-600"
             }`}
             href={href}
           >
@@ -35,10 +37,10 @@ const isCurrentPage = (url: string) => {
         ))
       }
       <a
-        class={`md:hidden text-xl whitespace-nowrap transition-colors text-neutral-600 hover:text-neutral-50 p-2 text-right ${
+        class={`md:hidden text-xl whitespace-nowrap transition-colors hover:text-neutral-50 p-2 text-right ${
           isCurrentPage("links")
             ? "text-neutral-50 border-b-zinc-300 border-b-2"
-            : ""
+            : "text-neutral-600"
         }`}
         href="/links"
       >
@@ -47,7 +49,7 @@ const isCurrentPage = (url: string) => {
     </nav>
 
     {
-      Astro.url.pathname !== "/links" && (
+      shouldShowSocials && (
         <div class="hidden md:block md:mt-20">
           <Socials />
         </div>
