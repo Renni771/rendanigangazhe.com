@@ -19,35 +19,35 @@ const isCurrentPage = (url: string) => {
 const shouldShowSocials = Astro.url.pathname !== "/links";
 ---
 
-<aside class="sticky top-0 flex md:flex-col z-50 md:pt-10 bg-[var(--night)]">
-  <div class="sticky top-0 pt-4 md:pt-0">
-    <nav class="flex md:flex-col md:justify-evenly gap-2">
-      {
-        navbarUrls.map(({ href, text }) => (
-          <a
-            class={`text-xl whitespace-nowrap transition-colors hover:text-neutral-50 p-2 text-right ${
-              isCurrentPage(href)
-                ? "text-neutral-50 border-b-zinc-300 underline underline-offset-8"
-                : "text-neutral-600"
-            }`}
-            href={href}
-          >
-            {text}
-          </a>
-        ))
-      }
+<aside
+  class="sticky top-0 md:top-16 flex md:flex-col justify-center md:justify-start items-center z-50 md:pt-10 bg-[var(--night)]"
+>
+  <nav class="sticky top-0 md:top-16 pt-4 md:pt-0 flex md:flex-col gap-2">
+    {
+      navbarUrls.map(({ href, text }) => (
+        <a
+          class={`text-xl whitespace-nowrap transition-colors hover:text-neutral-50 p-2 text-right ${
+            isCurrentPage(href)
+              ? "text-neutral-50 border-b-zinc-300 underline underline-offset-8"
+              : "text-neutral-600"
+          }`}
+          href={href}
+        >
+          {text}
+        </a>
+      ))
+    }
 
-      <a
-        class={`md:hidden text-xl whitespace-nowrap transition-colors hover:text-neutral-50 p-2 text-right ${
-          isCurrentPage("links")
-            ? "text-neutral-50 border-b-zinc-300 underline underline-offset-8"
-            : "text-neutral-600"
-        }`}
-        href="/links"
-      >
-        links
-      </a>
-    </nav>
+    <a
+      class={`md:hidden text-xl whitespace-nowrap transition-colors hover:text-neutral-50 p-2 text-right ${
+        isCurrentPage("links")
+          ? "text-neutral-50 border-b-zinc-300 underline underline-offset-8"
+          : "text-neutral-600"
+      }`}
+      href="/links"
+    >
+      links
+    </a>
 
     {
       shouldShowSocials && (
@@ -56,5 +56,5 @@ const shouldShowSocials = Astro.url.pathname !== "/links";
         </div>
       )
     }
-  </div>
+  </nav>
 </aside>
