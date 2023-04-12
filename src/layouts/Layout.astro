@@ -49,11 +49,11 @@ const description =
   </head>
 
   <body
-    class="antialiased p-4 mt-8 md:mt-32 text-zinc-200 flex flex-col sm:mx-14 md:mx-20 xl:mx-56 2xl:mx-96 md:flex-row"
+    class="antialiased md:mt-32 text-zinc-200 flex flex-col sm:mx-14 md:mx-20 xl:mx-56 2xl:mx-96 md:flex-row"
   >
     <Sidebar />
 
-    <main class="md:pl-20 pb-16 mt-12 md:mt-0">
+    <main class="md:pl-20 px-4 mt-10">
       <slot />
     </main>
   </body>
@@ -61,16 +61,14 @@ const description =
 
 <style is:global>
   :root {
-    --night: rgb(21 21 21);
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
+    --night: rgb(24 24 27);
   }
 
   html {
     font-family: "Poppins", sans-serif;
+  }
+
+  body {
     background-color: var(--night);
   }
 

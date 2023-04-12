@@ -19,7 +19,7 @@ const isCurrentPage = (url: string) => {
 const shouldShowSocials = Astro.url.pathname !== "/links";
 ---
 
-<aside class="sticky top-0 flex md:flex-col bg-[var(--night)] z-50 pt-10">
+<aside class="sticky top-0 flex md:flex-col z-50 md:pt-10 bg-[var(--night)]">
   <div class="sticky top-0 pt-4 md:pt-0">
     <nav class="flex md:flex-col md:justify-evenly gap-2">
       {
@@ -27,7 +27,7 @@ const shouldShowSocials = Astro.url.pathname !== "/links";
           <a
             class={`text-xl whitespace-nowrap transition-colors hover:text-neutral-50 p-2 text-right ${
               isCurrentPage(href)
-                ? "text-neutral-50 border-b-zinc-300 border-b-2"
+                ? "text-neutral-50 border-b-zinc-300 underline underline-offset-8"
                 : "text-neutral-600"
             }`}
             href={href}
@@ -36,10 +36,11 @@ const shouldShowSocials = Astro.url.pathname !== "/links";
           </a>
         ))
       }
+
       <a
         class={`md:hidden text-xl whitespace-nowrap transition-colors hover:text-neutral-50 p-2 text-right ${
           isCurrentPage("links")
-            ? "text-neutral-50 border-b-zinc-300 border-b-2"
+            ? "text-neutral-50 border-b-zinc-300 underline underline-offset-8"
             : "text-neutral-600"
         }`}
         href="/links"

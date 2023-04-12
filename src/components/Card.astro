@@ -8,11 +8,10 @@ export interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<div class="flex p-0.5 bg-zinc-800 transition-all hover:scale-105">
-  <a
-    href={href}
-    class="w-full no-underline py-4 px-6"
-  >
+<div
+  class="flex p-0.5 transition-transform hover:scale-105 border-zinc-500 rounded border-2"
+>
+  <a href={href} class="w-full no-underline py-4 px-6">
     <h2 class="m-0 text-xl">
       {title}
       <span>&rarr;</span>
