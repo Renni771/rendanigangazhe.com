@@ -1,10 +1,17 @@
 <script>
-  import '../app.css';
+	import '../app.css';
 	import Sidebar from '$components/Sidebar.svelte';
+
+	const metaContent =
+		'Rendani Gangazhe. Software Engineer specialising in web and mobile app development. I thrive off of learning and trying out new things. I like guitars.';
+	const metaTitle = 'Rendani Gangazhe - Software Engineer';
 </script>
 
 <svelte:head>
-	<title>Rendani Gangazhe - Software Engineer</title>
+	<title>{metaTitle}</title>
+	<meta name="description" content={metaContent} />
+	<meta property="og:title" content={metaTitle} />
+	<meta property="og:description" content={metaContent} />
 </svelte:head>
 
 <div

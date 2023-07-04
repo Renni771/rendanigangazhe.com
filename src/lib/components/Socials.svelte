@@ -6,7 +6,7 @@
 		rel="noopener noreferrer"
 	>
 		<svg
-			class="hover:text-zinc-600 hover:scale-110"
+			class="hover:scale-110 hover:text-zinc-600"
 			aria-hidden="true"
 			focusable="false"
 			data-prefix="fab"
@@ -31,7 +31,7 @@
 		rel="noopener noreferrer"
 	>
 		<svg
-			class="hover:text-blue-600 hover:scale-110"
+			class="hover:scale-110 hover:text-blue-600"
 			aria-hidden="true"
 			focusable="false"
 			data-prefix="fab"
@@ -56,7 +56,7 @@
 		rel="noopener noreferrer"
 	>
 		<svg
-			class="hover:text-sky-400 hover:scale-110"
+			class="hover:scale-110 hover:text-sky-400"
 			aria-hidden="true"
 			focusable="false"
 			data-prefix="fab"
