@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--night: rgb(24 24 27);
+}
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+    font-weight: 800;
+  }
+
+  h2 {
+    @apply text-2xl;
+    font-weight: 600;
+  }
+
+  h3 {
+    @apply text-lg;
+  	font-weight: 700;
+  }
+
+  body {
+    @apply bg-[--night];
+  }
+}

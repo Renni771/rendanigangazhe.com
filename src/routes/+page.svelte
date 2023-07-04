@@ -3,7 +3,7 @@
 	import avatarSrc from '$lib/assets/avatar.png';
 </script>
 
-<h1 class="text-center text-3xl md:text-left md:text-5xl">
+<h1 class="text-center md:text-left md:text-5xl">
 	<span class="hand"> &#128075;</span> Hey, I'm Rendani.
 </h1>
 

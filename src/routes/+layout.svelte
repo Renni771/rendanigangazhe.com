@@ -1,6 +1,6 @@
 <script>
+  import '../app.css';
 	import Sidebar from '$components/Sidebar.svelte';
-	import '../app.postcss';
 </script>
 
 <svelte:head>
