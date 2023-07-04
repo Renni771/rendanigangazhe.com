@@ -1,0 +1,77 @@
+<script>
+	import Card from '$components/Card.svelte';
+	import avatarSrc from '$lib/assets/avatar.png';
+</script>
+
+<h1 class="text-center text-3xl md:text-left md:text-5xl">
+	<span class="hand"> &#128075;</span> Hey, I'm Rendani.
+</h1>
+
+<div class="flex flex-col items-center justify-center md:my-12 md:flex-row">
+	<img
+		class="my-8 rounded-full md:my-0 md:mr-8"
+		src={avatarSrc}
+		width={128}
+		height={128}
+		alt="My portrait"
+	/>
+
+	<p class="text-2xl font-bold tracking-wide md:text-3xl">
+		Full stack web/mobile app software engineer. Computer science student. Music-head. Guitarist.
+	</p>
+</div>
+
+<div>
+	<p class="mt-4 text-lg">
+		Using every piece of knowledge I gather along the way I aim to build quality and maintainable
+		web, cloud-based and mobile software.
+	</p>
+
+	<div class="my-8 flex flex-col gap-4 lg:flex-row">
+		<Card
+			href="/about/#skills"
+			title="My Skills"
+			body="Read up on my skills and what I have to offer"
+		/>
+
+		<Card
+			href="/about/#experience"
+			title="Professional Experience"
+			body="A brief outline of my professional experience"
+		/>
+	</div>
+</div>
+
+<style>
+	span.hand {
+		animation-name: wave-animation;
+		animation-duration: 2.5s;
+		animation-iteration-count: infinite;
+		transform-origin: 70% 70%;
+		display: inline-block;
+	}
+
+	@keyframes wave-animation {
+		0% {
+			transform: rotate(0deg);
+		}
+		10% {
+			transform: rotate(-10deg);
+		}
+		20% {
+			transform: rotate(12deg);
+		}
+		30% {
+			transform: rotate(-10deg);
+		}
+		40% {
+			transform: rotate(9deg);
+		}
+		50% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+</style>
