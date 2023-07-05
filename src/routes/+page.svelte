@@ -17,14 +17,15 @@
 	/>
 
 	<p class="text-2xl font-bold tracking-wide md:text-3xl">
-		Full stack web/mobile app software engineer. Computer science student. Music-head. Guitarist.
+		Software engineer. Computer science student. Music-head. Guitarist.
 	</p>
 </div>
 
 <div>
 	<p class="mt-4 text-lg">
-		Using every piece of knowledge I gather along the way I aim to build quality and maintainable
-		web, cloud-based and mobile software.
+		I'm a web developer with a passion for building things that live on the internet.
+    I've worked intensively both on the frontend and backend building out cloud-based applications.
+    If it runs on the your desktop, phone or browser, I've build it.
 	</p>
 
 	<div class="my-8 flex flex-col gap-4 lg:flex-row">

@@ -5,7 +5,7 @@
 <h1>About me</h1>
 
 <p class="mt-8 text-lg">
-	I'm Rendani Gangazhe, a full stack web/mobile app developer and Computer Science student. I'm
+	I'm Rendani, a full stack web/mobile app developer and Computer Science student. I'm
 	originally from South Africa but am currently based in Freiburg, Germany. I keep a wide range of
 	interests besides coding and enjoy training and playing guitar &#127928;.
 </p>
