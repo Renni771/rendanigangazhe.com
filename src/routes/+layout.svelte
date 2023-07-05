@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-  import Analytics from '$components/Analytics.svelte';
+	import Analytics from '$components/Analytics.svelte';
 	import Sidebar from '$components/Sidebar.svelte';
 
 	const metaContent =
