@@ -1,6 +1,7 @@
 {
-	"name": "svelte-port",
+	"name": "rendanigangazhe.com",
 	"version": "0.0.1",
+	"type": "module",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -32,7 +33,6 @@
 		"typescript": "^5.1.6",
 		"vite": "^4.3.9"
 	},
-	"type": "module",
 	"dependencies": {
 		"@vercel/analytics": "^1.0.1"
 	}
