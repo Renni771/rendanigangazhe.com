@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+  import Analytics from '$components/Analytics.svelte';
 	import Sidebar from '$components/Sidebar.svelte';
 
 	const metaContent =
@@ -13,6 +14,8 @@
 	<meta property="og:title" content={metaTitle} />
 	<meta property="og:description" content={metaContent} />
 </svelte:head>
+
+<Analytics />
 
 <div
 	class="flex flex-col text-zinc-200 antialiased sm:mx-14 md:mx-20 md:mt-32 md:flex-row xl:mx-56 2xl:mx-96"
