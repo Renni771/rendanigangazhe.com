@@ -4,6 +4,10 @@
 	const websiteRepo = 'https://github.com/Renni771/rendanigangazhe.com';
 </script>
 
+<svelte:head>
+	<title>Link Tree | Rendani Gangazhe</title>
+</svelte:head>
+
 <h1>Link Tree</h1>
 
 <p class="text-lg">

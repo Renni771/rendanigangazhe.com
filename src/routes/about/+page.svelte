@@ -2,6 +2,10 @@
 	import ExperienceCard from '$components/ExperienceCard.svelte';
 </script>
 
+<svelte:head>
+	<title>About me | Rendani Gangazhe</title>
+</svelte:head>
+
 <h1>About me</h1>
 
 <p class="mt-8 text-lg">
