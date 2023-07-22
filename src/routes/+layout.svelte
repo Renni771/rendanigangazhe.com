@@ -13,6 +13,11 @@
 	<meta name="description" content={metaContent} />
 	<meta property="og:title" content={metaTitle} />
 	<meta property="og:description" content={metaContent} />
+	<meta property="og:image" content="https://rendanigangazhe.com/og.png" />
+
+	<meta name="twitter:site" content="@rendanigangazhe" />
+	<meta name="twitter:creator" content="@rendanigangazhe" />
+  <meta property="twitter:image" content="https://rendanigangazhe.com/og.png" />
 </svelte:head>
 
 <Analytics />

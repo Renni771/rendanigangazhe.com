@@ -12,8 +12,6 @@
 	<meta property="og:author" content={'Rendani Gangazhe'} />
 
 	<meta name="twitter:card" content={data.description} />
-	<meta name="twitter:site" content="@rendanigangazhe" />
-	<meta name="twitter:creator" content="@rendanigangazhe" />
 </svelte:head>
 
 <article>
