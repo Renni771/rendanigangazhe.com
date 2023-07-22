@@ -1,7 +1,19 @@
 <script>
 	import Card from '$components/Card.svelte';
 	import avatarSrc from '$lib/assets/avatar.png';
+
+	const metaContent =
+		'Rendani Gangazhe. Software Engineer specialising in web and mobile app development. I thrive off of learning and trying out new things. I like guitars.';
+	const metaTitle = 'Rendani Gangazhe - Software Engineer';
 </script>
+
+<svelte:head>
+	<title>{metaTitle}</title>
+	<meta name="description" content={metaContent} />
+
+	<meta property="og:description" content={metaContent} />
+  <meta property="og:title" content={metaTitle} />
+</svelte:head>
 
 <h1 class="text-center md:text-left md:text-5xl">
 	<span class="hand"> &#128075;</span> hey, I'm Rendani.
