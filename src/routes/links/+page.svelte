@@ -10,7 +10,7 @@
 
 <h1 class="mt-4">link tree</h1>
 
-<p class="text-lg mt-4">
+<p class="mt-4 text-lg">
 	Here's a little link tree where you can find more information on what I'm up to.
 </p>
 

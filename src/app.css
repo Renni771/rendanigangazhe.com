@@ -7,11 +7,10 @@
 }
 
 html {
-  margin-left: calc(100vw - 100%);
+	margin-left: calc(100vw - 100%);
 }
 
 @layer base {
-
 	h1 {
 		@apply text-3xl;
 		font-weight: 800;
