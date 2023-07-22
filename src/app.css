@@ -6,7 +6,12 @@
 	--night: rgb(24 24 27);
 }
 
+html {
+  margin-left: calc(100vw - 100%);
+}
+
 @layer base {
+
 	h1 {
 		@apply text-3xl;
 		font-weight: 800;

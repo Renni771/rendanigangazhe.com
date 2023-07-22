@@ -17,12 +17,12 @@
 
 <Analytics />
 
-<div
-	class="flex flex-col text-zinc-200 antialiased sm:mx-14 md:mx-20 md:mt-32 md:flex-row xl:mx-56 2xl:mx-96"
->
+<div class="flex min-h-screen flex-col text-zinc-200 antialiased md:flex-row tracking-tight">
 	<Sidebar />
 
-	<main class="mt-10 px-4 pb-4 md:pl-20">
-		<slot />
+	<main class="md:flex-[2] md:pt-40">
+		<div class="px-4 md:w-[800px] mt-16 md:mt-0">
+			<slot />
+		</div>
 	</main>
 </div>

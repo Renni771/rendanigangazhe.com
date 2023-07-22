@@ -21,9 +21,9 @@
 </script>
 
 <aside
-	class="sticky top-0 z-50 flex items-center justify-center bg-[var(--night)] md:top-16 md:flex-col md:justify-start md:pt-10"
+	class="sticky top-0 z-50 flex items-end justify-center pt-4 bg-[--night] md:top-40 md:flex-[0.75] md:flex-col md:justify-start md:pr-16 md:pt-10"
 >
-	<nav class="sticky top-0 flex gap-2 pt-4 md:top-16 md:flex-col md:pt-0">
+	<nav class="sticky top-0 flex gap-2 md:top-40 md:flex-col">
 		{#each navbarUrls as { href, text }}
 			<a
 				class={`whitespace-nowrap p-2 text-right text-xl transition-colors hover:text-neutral-50 ${

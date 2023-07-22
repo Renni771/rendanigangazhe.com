@@ -8,9 +8,9 @@
 	<title>Link Tree | Rendani Gangazhe</title>
 </svelte:head>
 
-<h1>Link Tree</h1>
+<h1 class="mt-4">link tree</h1>
 
-<p class="text-lg">
+<p class="text-lg mt-4">
 	Here's a little link tree where you can find more information on what I'm up to.
 </p>
 

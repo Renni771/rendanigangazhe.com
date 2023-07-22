@@ -4,20 +4,21 @@
 </script>
 
 <h1 class="text-center md:text-left md:text-5xl">
-	<span class="hand"> &#128075;</span> Hey, I'm Rendani.
+	<span class="hand"> &#128075;</span> hey, I'm Rendani.
 </h1>
 
 <div class="flex flex-col items-center justify-center md:my-12 md:flex-row">
 	<img
 		class="my-8 rounded-full md:my-0 md:mr-8"
+		loading="lazy"
 		src={avatarSrc}
 		width={128}
 		height={128}
 		alt="My portrait"
 	/>
 
-	<p class="text-2xl font-bold tracking-wide md:text-3xl">
-		Software engineer. Computer science student. Music-head. Guitarist.
+	<p class="text-2xl font-bold lg:text-3xl">
+		Software Engineer. Computer Science student. Music-head. Guitarist.
 	</p>
 </div>
 
