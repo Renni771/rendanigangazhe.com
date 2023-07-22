@@ -8,8 +8,6 @@ export async function load({ params }) {
 		const post = await import(`../../../lib/posts/${params.slug}.md`);
 		const metadata = post.metadata as PostMetadata;
 
-		console.log(post.default);
-
 		return {
 			...metadata,
 			content: post.default,
