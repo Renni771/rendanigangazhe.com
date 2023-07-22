@@ -12,7 +12,7 @@
 			{title}
 			<span>&rarr;</span>
 		</p>
-		<p class="text-gray-500">
+		<p class="text-neutral-400">
 			From {from} to {to}
 		</p>
 		<p class="mb-0 mt-2">

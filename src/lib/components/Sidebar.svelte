@@ -9,12 +9,12 @@
 	];
 
 	$: isCurrentPage = (url: string) => {
-		let pathname = $page.url.pathname;
-		if (pathname.length > 1 && pathname.endsWith('/')) {
-			pathname = pathname.slice(0, pathname.length - 1);
+		let currentPage = $page.url.pathname;
+		if (currentPage.includes('/blog/')) {
+			currentPage = '/blog';
 		}
 
-		return pathname === (url.startsWith('/') ? url : '/' + url);
+		return currentPage.endsWith(url);
 	};
 
 	$: shouldShowSocials = $page.url.pathname !== '/links';

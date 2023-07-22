@@ -1,7 +1,23 @@
+<script>
+	export let data;
+</script>
+
 <svelte:head>
 	<title>Blog | Rendani Gangazhe</title>
+	<meta name="description" content={`Rendani's blog`} />
 </svelte:head>
 
-<h1>Blog</h1>
+<h1 class="ml-4">Blog</h1>
 
-<p class="mt-8 text-lg">I'll post something here when I've got something to say...</p>
+{#each data.posts as { title, date, description, slug }}
+	<div class="mt-10 rounded-md p-4 transition hover:bg-zinc-200 hover:bg-opacity-10 md:w-[700px]">
+		<a href="/blog/{slug}">
+			<div class="flex flex-col justify-between lg:flex-row">
+				<h2 class="font-bold text-neutral-200">{title}</h2>
+				<span class="text-neutral-400">{date}</span>
+			</div>
+
+			<p class="mt-2 text-neutral-300">{description}</p>
+		</a>
+	</div>
+{/each}
