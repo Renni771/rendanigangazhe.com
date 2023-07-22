@@ -25,7 +25,7 @@
 		<p class="mt-4">{data.date}</p>
 	</header>
 
-	<section class="prose prose-lg prose-invert mt-4 md:prose-xl">
+	<section class="prose prose-lg prose-invert mt-4">
 		<svelte:component this={data.content} />
 	</section>
 </article>
