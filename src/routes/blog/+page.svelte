@@ -12,9 +12,14 @@
 	<meta property="og:author" content={'Rendani Gangazhe'} />
 	<meta property="og:description" content={metaDescription} />
 	<meta property="og:title" content={metaTitle} />
+  <meta property="og:image" content="https://rendanigangazhe.com/og.png" />
 
+  <meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@rendanigangazhe" />
 	<meta property="twitter:description" content={metaDescription} />
+  <meta property="twitter:domain" content="rendanigangazhe.com" />
 	<meta property="twitter:title" content={metaTitle} />
+  <meta property="twitter:image" content="https://rendanigangazhe.com/og.png" />
 </svelte:head>
 
 <h1 class="ml-4 mt-2">blog</h1>
