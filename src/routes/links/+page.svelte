@@ -1,11 +1,21 @@
 <script lang="ts">
 	import Card from '$components/Card.svelte';
 
+	const metaDescription = `Here's a little link tree where you can find more information on what I'm up to.`;
+	const metaTitle = 'Link Tree | Rendani Gangazhe';
 	const websiteRepo = 'https://github.com/Renni771/rendanigangazhe.com';
 </script>
 
 <svelte:head>
-	<title>Link Tree | Rendani Gangazhe</title>
+	<title>{metaTitle}</title>
+
+	<meta name="description" content={metaDescription} />
+
+	<meta property="og:description" content={metaDescription} />
+	<meta property="og:title" content={metaTitle} />
+
+	<meta property="twitter:description" content={metaDescription} />
+	<meta property="twitter:title" content={metaTitle} />
 </svelte:head>
 
 <h1 class="mt-4">link tree</h1>

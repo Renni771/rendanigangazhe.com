@@ -10,12 +10,9 @@
 	<meta property="og:description" content={data.description} />
 	<meta property="og:published_time" content={data.date} />
 	<meta property="og:title" content={data.title} />
-	<meta property="og:url" content="https://rendanigangazhe.com/blog/{data.slug}" />
 
-	<meta name="twitter:card" content={data.description} />
 	<meta property="twitter:description" content={data.description} />
 	<meta property="twitter:title" content={data.title} />
-	<meta property="twitter:url" content="https://rendanigangazhe.com/blog/{data.slug}" />
 </svelte:head>
 
 <article>

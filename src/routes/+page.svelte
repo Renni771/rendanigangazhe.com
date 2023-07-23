@@ -12,7 +12,7 @@
 	<meta name="description" content={metaContent} />
 
 	<meta property="og:description" content={metaContent} />
-  <meta property="og:title" content={metaTitle} />
+	<meta property="og:title" content={metaTitle} />
 </svelte:head>
 
 <h1 class="text-center md:text-left md:text-5xl">

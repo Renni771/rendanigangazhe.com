@@ -1,9 +1,20 @@
 <script>
 	import ExperienceCard from '$components/ExperienceCard.svelte';
+
+	const metaDescription = 'A more detailed explanation about me and what I do';
+	const metaTitle = 'About Me | Rendani Gangazhe';
 </script>
 
 <svelte:head>
-	<title>About Me | Rendani Gangazhe</title>
+	<title>{metaTitle}</title>
+
+	<meta name="description" content={metaDescription} />
+
+	<meta property="og:description" content={metaDescription} />
+	<meta property="og:title" content={metaTitle} />
+
+	<meta property="twitter:description" content={metaDescription} />
+	<meta property="twitter:title" content={metaTitle} />
 </svelte:head>
 
 <h1 class="mt-2">about me</h1>
