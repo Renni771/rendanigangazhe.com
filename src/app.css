@@ -7,7 +7,7 @@
 }
 
 html {
-	margin-left: calc(100vw - 100%);
+	scrollbar-gutter: stable;
 }
 
 @layer base {

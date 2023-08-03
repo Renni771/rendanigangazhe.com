@@ -17,9 +17,9 @@
 	<meta property="twitter:title" content={metaTitle} />
 </svelte:head>
 
-<h1 class="mt-2">about me</h1>
+<h1 class="mt-1 md:pl-4">about me</h1>
 
-<div class="prose prose-lg prose-invert mt-4 p-1">
+<div class="prose prose-lg prose-invert mt-8 md:pl-4">
 	<p>
 		I'm Rendani, a full stack web/mobile app developer and Computer Science student. I'm originally
 		from South Africa but am currently based in Freiburg, Germany. I keep a wide range of interests

@@ -16,12 +16,11 @@
 
 		return currentPage.endsWith(url);
 	};
-
 	$: shouldShowSocials = $page.url.pathname !== '/links';
 </script>
 
 <aside
-	class="sticky top-0 z-50 flex items-end justify-center bg-[--night] pt-4 md:top-40 md:flex-[0.75] md:flex-col md:justify-start md:pr-16 md:pt-10"
+	class="sticky top-0 z-50 flex items-end justify-center bg-[--night] pt-4 md:top-40 md:flex-col md:justify-start md:pr-16 md:pt-10"
 >
 	<nav class="sticky top-0 flex gap-2 md:top-40 md:flex-col">
 		{#each navbarUrls as { href, text }}

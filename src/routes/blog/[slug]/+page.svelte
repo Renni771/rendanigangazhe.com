@@ -16,10 +16,10 @@
 </svelte:head>
 
 <article>
-	<header>
+	<header class="pt-3">
 		<a href="/blog">&larr; Go Back</a>
 
-		<h1 class="mt-4">{data.title}</h1>
+		<h1 class="mt-8">{data.title}</h1>
 
 		<p class="mt-4">{data.date}</p>
 	</header>
