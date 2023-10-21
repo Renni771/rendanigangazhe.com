@@ -28,7 +28,7 @@
 				class={`whitespace-nowrap p-2 text-right text-xl transition-colors hover:text-neutral-50 ${
 					isCurrentPage(href)
 						? 'border-b-zinc-300 text-neutral-50 underline underline-offset-8'
-						: 'text-neutral-600'
+						: 'text-neutral-400'
 				}`}
 				{href}
 			>
@@ -40,7 +40,7 @@
 			class={`whitespace-nowrap p-2 text-right text-xl transition-colors hover:text-neutral-50 md:hidden ${
 				isCurrentPage('links')
 					? 'border-b-zinc-300 text-neutral-50 underline underline-offset-8'
-					: 'text-neutral-600'
+					: 'text-neutral-400'
 			}`}
 			href="/links"
 		>
