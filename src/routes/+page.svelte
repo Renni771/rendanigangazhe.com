@@ -1,6 +1,6 @@
 <script>
 	import Card from '$components/Card.svelte';
-	import avatarSrc from '$lib/assets/avatar.png';
+	import avatarSrc from '$lib/assets/avatar.webp';
 
 	const metaContent =
 		'Rendani Gangazhe. Software Engineer specialising in web and mobile app development. I thrive off of learning and trying out new things. I like guitars.';
