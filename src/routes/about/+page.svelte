@@ -29,19 +29,17 @@
 	<p>
 		The name "Rendani" is a
 		<a
-			class="font-bold underline"
 			href="https://en.wikipedia.org/wiki/Venda_people"
 			target="_blank"
 		>
-			<strong>Tshivenda</strong>
+      Tshivenda
 		</a>
 		unisex name meaning "praise/give praise" and is under no circumstances
 		<a
-			class="font-bold underline"
 			href="https://en.wikipedia.org/wiki/Rendani_Airport"
 			target="_blank"
 		>
-			<strong>to be confused with the airport.</strong>
+      to be confused with the airport.
 		</a>
 	</p>
 
