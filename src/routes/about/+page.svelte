@@ -49,11 +49,19 @@
 		<h2>professional experience</h2>
 
 		<ExperienceCard
+			title="The Native Web"
+			href="https://thenativeweb.io/"
+			from="Dec 2023"
+			to="Now"
+			body="Backend development using golang. Currently building web services with a heavy focus on CQRS, Event Sourcing and Domain-Driven Design."
+		/>
+
+		<ExperienceCard
 			title="Mäuschen App"
 			href="https://mäuschen.app/"
-			from="2020"
-			to="2022"
-			body="Responsible for building cross-platform mobile apps using Flutter. Built out JSON APIs using Express.js, containerised them with Docker/Docker Compose and deployed them in Kubernetes clusters. "
+			from="Jul 2020"
+			to="Jun 2022"
+			body="Built frontend apps using Flutter and backend services using TypeScript. DevOps using Docker/Docker Compose and Kubernetes."
 		/>
 	</section>
 
