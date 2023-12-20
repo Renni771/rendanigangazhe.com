@@ -25,7 +25,9 @@
 <h1 class="mt-1 md:pl-4">blog</h1>
 
 {#each data.posts as { title, date, description, slug }}
-	<div class="mt-4 rounded-md transition md:hover:bg-zinc-200 md:hover:bg-opacity-10 md:mt-8 md:p-4">
+	<div
+		class="mt-4 rounded-md transition md:hover:bg-zinc-200 md:hover:bg-opacity-10 md:mt-8 md:p-4"
+	>
 		<a href="/blog/{slug}">
 			<div class="flex flex-col justify-between lg:flex-row">
 				<h2 class="font-bold text-neutral-200">{title}</h2>
