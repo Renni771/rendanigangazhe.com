@@ -14,6 +14,6 @@ export async function load({ params }) {
 			date: formatDate(metadata.date)
 		};
 	} catch (ex) {
-		throw error(404, `Could not find post '${params.slug}'`);
+		error(404, `Could not find post '${params.slug}'`);
 	}
 }
