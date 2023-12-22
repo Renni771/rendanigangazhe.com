@@ -19,11 +19,11 @@
 
 <h1 class="mt-1 md:pl-4">about me</h1>
 
-<div class="prose prose-lg prose-invert mt-8 md:pl-4">
+<div class="prose prose-lg prose-invert py-8 md:pl-4">
 	<p>
-		I'm Rendani, a full stack web/mobile app developer and Computer Science student. I'm originally
-		from South Africa but am currently based in Freiburg, Germany. I keep a wide range of interests
-		besides coding and enjoy training and playing guitar &#127928;.
+		I'm Rendani, a Software Engineer and Computer Science student. Originally from South Africa,
+		trying to soak up the sun in Germany. If I'm not coding, you'll catch me diving into classic
+		movies, exploring to obscure music or playing guitar &#127928;.
 	</p>
 
 	<p>
@@ -60,14 +60,12 @@
 	<div class="mt-4 h-1" id="skills" />
 
 	<section class="flex flex-col gap-4">
-		<h2>technical skills</h2>
-
 		<section>
+			<h2>technical skills</h2>
+
 			<p>
-				I'm most experienced using <strong>JavaScript</strong> and <strong>TypeScript</strong> for
-				both front and backend development and am also comfortable using
-				<strong>Dart</strong> along with the <strong>Flutter</strong> UI kit for cross-platform mobile
-				app development.
+				I'm most experienced with <strong>JavaScript</strong>, <strong>TypeScript</strong> for both
+				front and backend development and also use <strong>Go</strong> for more general purpose programming.
 			</p>
 		</section>
 
@@ -76,23 +74,19 @@
 				<h3>frontend</h3>
 
 				<p>
-					Regarding <strong>Flutter</strong> app development, I have professional experience with
-					various state management libraries including <strong>Provider</strong>
+					I've used <strong>Svelte</strong>, <strong>Vue.js</strong>, <strong>React</strong> as well
+					as their respective meta-frameworks (SvelteKit and Next.js) to build out user interfaces.
+					Personally I really enjoy using <strong>Svelte</strong> and <strong>Sveltekit</strong>.
+				</p>
+
+				<p>
+					I also have some knowledge of <strong>React</strong> and <strong>Next.js</strong>.
+				</p>
+
+				<p>
+					For about 2 years I used <strong>Flutter</strong> for cross-platform mobile app
+					development, using various state management libraries including <strong>Provider</strong>
 					and <strong>Riverpod</strong>.
-				</p>
-
-				<p>
-					On the web development side of things, I build user interfaces with pure <strong
-						>HTML5/CSS3</strong
-					>
-					and larger more interactive web apps using
-					<strong>Svelte</strong>
-					and <strong>Sveltekit</strong>.
-				</p>
-
-				<p>
-					I also have some knowledge of <strong>React</strong> and
-					<strong>Next.js</strong>.
 				</p>
 			</section>
 
@@ -100,15 +94,14 @@
 				<h3>backend</h3>
 
 				<p>
-					On the backend I'm most experienced with <strong>Node.js</strong> and use it build out
-					with
-					<strong>Express.js</strong> APIs.
+					On the backend, I usually use <strong>Node.js</strong> or <strong>Go</strong> depending on
+					the project requirements.
 				</p>
 
 				<p>
-					My preferred database is <strong>Firebase</strong> but I also have experience using
-					<strong>MinIO</strong>, <strong>MySQL</strong> and other similar relational databases following
-					the SQL standard.
+					Regarding databases, I've worked with <strong>Postgres</strong> and other SQL databases
+					such as
+					<strong>MySQL</strong>. My most used NoSQL database is <strong>Firebase</strong>.
 				</p>
 			</section>
 		</div>
@@ -118,14 +111,7 @@
 				<h3>other languages and tools</h3>
 
 				<p>
-					I've used <strong>Python</strong> and <strong>Go</strong> but haven't used them in any professional
-					settings.
-				</p>
-
-				<p>
-					I'm also familiar the usual developer tools such as <strong>Git</strong>,
-					<strong>Gitea</strong>, <strong>Github</strong> and
-					<strong>Jira</strong>.
+					I've used <strong>Python</strong> but haven't used it in any professional settings.
 				</p>
 			</section>
 
@@ -133,8 +119,8 @@
 				<h3>DevOps</h3>
 
 				<p>
-					I leverage <strong>Docker</strong> and <strong>Kubernetes</strong> to help build
-					containerised web services deployed through <strong>CI-CD</strong> pipelines
+					When writing cloud services, I use <strong>Docker</strong> for containerising
+					web-applications and <strong>Kubernetes</strong> to deploy them.
 				</p>
 			</section>
 		</div>
