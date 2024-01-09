@@ -23,7 +23,7 @@
 	<p>
 		I'm Rendani, a Software Engineer and Computer Science student. Originally from South Africa,
 		trying to soak up the sun in Germany. If I'm not coding, you'll catch me diving into classic
-		movies, exploring to obscure music or playing guitar &#127928;.
+		movies, exploring obscure music or playing guitar &#127928;.
 	</p>
 
 	<p>
