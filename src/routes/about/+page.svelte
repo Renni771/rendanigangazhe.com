@@ -21,7 +21,7 @@
 
 <div class="prose prose-lg prose-invert py-8 md:pl-4">
 	<p>
-		I'm Rendani, a Software Engineer and Computer Science student. Originally from South Africa,
+		I'm Rendani, a Software Engineer. Originally from South Africa,
 		trying to soak up the sun in Germany. If I'm not coding, you'll catch me diving into classic
 		movies, exploring obscure music or playing guitar &#127928;.
 	</p>

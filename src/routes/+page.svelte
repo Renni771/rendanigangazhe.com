@@ -30,7 +30,7 @@
 	/>
 
 	<p class="text-2xl font-bold lg:text-3xl">
-		Software Engineer. Computer Science student. Music-head. Guitarist.
+		Software Engineer. Musichead. Guitarist.
 	</p>
 </div>
 
