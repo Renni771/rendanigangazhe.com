@@ -38,7 +38,7 @@
 	<p class="prose prose-invert mt-4 text-lg">
 		I'm a web developer with a passion for building things that live on the internet. I currently
 		work <a href="https://thenativeweb.io/" target="_blank">@thenativeweb</a> building out cloud-based
-		applications. If it runs on the your desktop, phone or browser, I've build it.
+		applications. If it runs on your desktop, phone or browser, I've build it.
 	</p>
 
 	<div class="my-8 flex flex-col gap-4 lg:flex-row">
