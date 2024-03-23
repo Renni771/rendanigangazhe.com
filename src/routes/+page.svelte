@@ -1,6 +1,7 @@
 <script>
 	import Card from '$components/Card.svelte';
 	import avatarSrc from '$lib/assets/avatar.webp';
+	import WavingHand from '$lib/components/WavingHand.svelte';
 
 	const metaContent =
 		'Rendani Gangazhe. Software Engineer specialising in web and mobile app development. I thrive off of learning and trying out new things. I like guitars.';
@@ -16,7 +17,7 @@
 </svelte:head>
 
 <h1 class="text-center md:text-left md:text-5xl">
-	<span class="hand"> &#128075;</span> hey, I'm Rendani.
+	<WavingHand /> hey, I'm Rendani.
 </h1>
 
 <div class="flex flex-col items-center justify-center md:my-12 md:flex-row">
@@ -29,9 +30,7 @@
 		alt="My portrait"
 	/>
 
-	<p class="text-2xl font-bold lg:text-3xl">
-		Software Engineer. Musichead. Guitarist.
-	</p>
+	<p class="text-2xl font-bold lg:text-3xl">Software Engineer. Musichead. Guitarist.</p>
 </div>
 
 <div>
@@ -55,37 +54,3 @@
 		/>
 	</div>
 </div>
-
-<style>
-	span.hand {
-		animation-name: wave-animation;
-		animation-duration: 2.5s;
-		animation-iteration-count: infinite;
-		transform-origin: 70% 70%;
-		display: inline-block;
-	}
-
-	@keyframes wave-animation {
-		0% {
-			transform: rotate(0deg);
-		}
-		10% {
-			transform: rotate(-10deg);
-		}
-		20% {
-			transform: rotate(12deg);
-		}
-		30% {
-			transform: rotate(-10deg);
-		}
-		40% {
-			transform: rotate(9deg);
-		}
-		50% {
-			transform: rotate(0deg);
-		}
-		100% {
-			transform: rotate(0deg);
-		}
-	}
-</style>
