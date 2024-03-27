@@ -30,7 +30,7 @@
 		alt="My portrait"
 	/>
 
-	<p class="text-2xl font-bold lg:text-3xl">Software Engineer. Musichead. Guitarist.</p>
+	<p class="text-2xl font-bold lg:text-3xl">Software Engineer. Tinkerer. Creative.</p>
 </div>
 
 <div>
