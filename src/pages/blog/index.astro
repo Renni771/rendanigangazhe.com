@@ -1,0 +1,18 @@
+---
+import BlogPostCard from '../../components/BlogPostCard.astro';
+import BasePageLayout from '../../layouts/BasePageLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+
+const title = 'Blog | Rendani Gangazhe';
+const description = 'My personal blog.';
+---
+
+<BasePageLayout title={title} description={description}>
+	<h1 class="mt-1 md:pl-4">blog</h1>
+
+	{posts.map((post) => <BlogPostCard post={post} />)}
+</BasePageLayout>

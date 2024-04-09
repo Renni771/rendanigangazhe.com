@@ -1,0 +1,24 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = HTMLAttributes<'a'>;
+
+const { href, class: className, ...props } = Astro.props;
+
+const { pathname } = Astro.url;
+const subpath = pathname.match(/[^\/]+/g);
+const isActive = href === pathname || href === '/' + subpath?.[0];
+
+const baseClasses =
+	'whitespace-nowrap p-2 text-right text-xl transition-colors hover:text-neutral-50';
+const activeClasses =
+	'border-b-zinc-300 text-neutral-50 underline underline-offset-8';
+---
+
+<a
+	{...props}
+	{href}
+	class={`${baseClasses} ${isActive ? activeClasses : 'text-neutral-400'}`}
+>
+	<slot />
+</a>

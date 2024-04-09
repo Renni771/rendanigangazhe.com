@@ -1,0 +1,32 @@
+---
+import NavbarLink from './NavbarLink.astro';
+import Socials from './Socials.astro';
+
+const { pathname } = Astro.url;
+
+const navbarUrls = [
+	{ href: '/', text: 'home' },
+	{ href: '/about', text: 'about me' },
+	{ href: '/blog', text: 'blog' }
+];
+
+const shouldShowSocials = pathname !== '/links';
+---
+
+<aside
+	class="sticky top-0 z-50 flex items-end justify-center bg-[--night] pt-4 md:top-40 md:flex-col md:justify-start md:pr-10 md:pt-10"
+>
+	<nav class="sticky top-0 flex gap-2 md:top-40 md:flex-col">
+		{
+			navbarUrls.map(({ href, text }) => (
+				<NavbarLink href={href}>{text}</NavbarLink>
+			))
+		}
+
+		<div class="md:hidden">
+			<NavbarLink href="/links">links</NavbarLink>
+		</div>
+
+		{shouldShowSocials && <Socials />}
+	</nav>
+</aside>

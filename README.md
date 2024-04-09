@@ -4,7 +4,7 @@ My personal website.
 
 ## Built with
 
-- Framework: [SvelteKit](https://kit.svelte.dev/)
+- Framework: [Astro](https://astro.build/)
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
 - Hosting: [Vercel](https://vercel.com/)
 - Analytics: [Vercel Analytics](https://vercel.com/analytics/)

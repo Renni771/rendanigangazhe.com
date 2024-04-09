@@ -1,0 +1,31 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Navbar from '../components/Navbar.astro';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+	<body>
+		<div
+			class="flex min-h-screen max-w-4xl flex-col px-4 tracking-tight text-zinc-200 antialiased md:flex-row lg:mx-auto"
+		>
+			<Navbar />
+
+			<main class="md:flex-[2] md:pt-40">
+				<div class="pt-16 md:pt-0">
+					<slot />
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
