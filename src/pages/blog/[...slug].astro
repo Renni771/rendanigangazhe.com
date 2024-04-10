@@ -1,21 +1,14 @@
 ---
 import BasePageLayout from '../../layouts/BasePageLayout.astro';
 import { formatDate } from '../../time';
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 
-export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post
-	}));
-}
+const posts = await getCollection('blog');
+const { slug } = Astro.params;
+const post = posts.find((page) => page.slug === slug);
+if (!post) return Astro.redirect("/404");
 
-type Props = CollectionEntry<'blog'>;
-
-const post = Astro.props;
 const { Content } = await post.render();
-
 const formattedDate = formatDate(post.data.pubDate);
 ---
 

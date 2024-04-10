@@ -18,7 +18,10 @@ const activeClasses =
 <a
 	{...props}
 	{href}
-	class={`${baseClasses} ${isActive ? activeClasses : 'text-neutral-400'}`}
+	class:list={[
+        `${baseClasses} ${isActive ? activeClasses : 'text-neutral-400'}`,
+        className
+    ]}
 >
 	<slot />
 </a>

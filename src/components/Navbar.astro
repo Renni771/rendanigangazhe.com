@@ -23,9 +23,7 @@ const shouldShowSocials = pathname !== '/links';
 			))
 		}
 
-		<div class="md:hidden">
-			<NavbarLink href="/links">links</NavbarLink>
-		</div>
+			<NavbarLink href="/links" class="md:hidden">links</NavbarLink>
 
 		{shouldShowSocials && <Socials />}
 	</nav>
