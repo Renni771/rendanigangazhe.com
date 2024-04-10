@@ -7,7 +7,9 @@ const title = 'About Me | Rendani Gangazhe';
 const description = 'A more detailed explanation about me and what I do';
 const websiteRepoURL = 'https://github.com/Renni771/rendanigangazhe.com';
 
-const experience = await getCollection('experience');
+const experience = (await getCollection('experience')).sort((a, b) => {
+    return new Date(b.data.from).valueOf() - new Date(a.data.from).valueOf();
+});
 ---
 
 <BasePageLayout title={title} description={description}>
