@@ -1,12 +1,16 @@
 ---
+import { getCollection } from "astro:content";
+
 const rssUrl = `${Astro.site}rss.xml`;
+
+const socials = (await getCollection('socials'))[0].data;
 ---
 
 <div class="hidden md:mt-20 md:block">
 	<div class="flex items-end gap-4 md:mt-8 md:flex-col">
 		<a
 			aria-label="Link to my github profile."
-			href="https://github.com/Renni771"
+			href={socials.github}
 			target="_blank"
 			rel="noopener noreferrer"
 		>
@@ -31,7 +35,7 @@ const rssUrl = `${Astro.site}rss.xml`;
 
 		<a
 			aria-label="Link to my linkedin profile."
-			href="https://www.linkedin.com/in/rendani-gangazhe-817243144/"
+			href={socials.linkedin}
 			target="_blank"
 			rel="noopener noreferrer"
 		>
@@ -56,7 +60,7 @@ const rssUrl = `${Astro.site}rss.xml`;
 
 		<a
 			aria-label="Link to my twitter page."
-			href="https://twitter.com/rendanigangazhe"
+			href={socials.twitter}
 			target="_blank"
 			rel="noopener noreferrer"
 		>
