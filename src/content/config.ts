@@ -24,7 +24,6 @@ const socials = defineCollection({
   type: "data",
   schema: z.object({
     github: z.string().url(),
-    twitter: z.string().url(),
     linkedin: z.string().url(),
   }),
 });
