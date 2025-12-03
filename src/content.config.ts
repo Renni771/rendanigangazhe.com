@@ -31,4 +31,5 @@ const socials = defineCollection({
 export const collections = {
   blog,
   experience,
+  socials,
 };

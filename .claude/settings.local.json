@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": ["Bash(cat:*)", "Bash(jq:*)", "Bash(npm run build:*)"],
+    "deny": [],
+    "ask": []
+  }
+}
